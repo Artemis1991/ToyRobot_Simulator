@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #DAA520;
+    background-color:#FFFFE0;
+}
+
+.description {
+    margin: 20px auto;
+    width: 30%;
+    text-align: left;
+    background-color: #FFD700;
+    color: #000000;
+    padding: 10px;
+    border: 2px solid #000;
+
+}
+
+.grid {
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gold {
+    background-color: #FFD700;
+}
+
+.white {
+    background-color: #FFFFFF;
+}
+
+.robot {
+    width: 80px;
+    height: 142px;
+    transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
+}
+
+.robot.north {
+    transform: rotate(0deg);
+}
+
+.robot.east {
+    transform: rotate(90deg);
+}
+
+.robot.south {
+    transform: rotate(180deg);
+}
+
+.robot.west {
+    transform: rotate(270deg);
+}
+
+.terminal {
+    display: inline-block;
+    margin-top: 20px;
+    width: 30%;
+    border: 1px solid #000;
+    background-color:#696969;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 10px;
+}
+
+.terminal-output {
+    height: 200px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+.terminal form {
+    display: flex;
+}
+
+.terminal input[type="text"] {
+    flex-grow: 1;
+    background-color: #000;
+    color: #FFFAF0;
+    border: 1px solid #FFD700;
+    padding: 5px;
+}
+
+.terminal button {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#error-container {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
