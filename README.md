@@ -12,3 +12,5 @@ MOVE - will move the toy robot one unit forward in the direction it is currently
 LEFT | RIGHT - will rotate the robot in the specified direction without changing the position of the robot.
 REPORT - will announce the X,Y and F of the robot.
 RESET - will reset the simulator and remove the robot from the table.
+
+test
